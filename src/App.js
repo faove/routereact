@@ -2,6 +2,7 @@ import React from 'react';
 import Inicio from './components/Inicio'
 import Nosotros from './components/Nosotros'
 import Contacto from './components/Contacto'
+import User from './components/User'
 
 import {
   BrowserRouter as Router,
@@ -28,6 +29,9 @@ function App() {
         </div>
       </div>
       <Switch>
+        <Route path="/nosotros/:id">
+            <User/>
+        </Route>
         <Route path="/" exact>
             <Inicio/>
         </Route>
